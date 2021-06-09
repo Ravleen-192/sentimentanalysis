@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sareact-dev-124511-authRole",
+      "UnauthRoleArn": "arn:aws:iam::211544418920:role/amplify-sareact-dev-124511-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::211544418920:role/amplify-sareact-dev-124511-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-sareact-dev-124511-deployment",
+      "UnauthRoleName": "amplify-sareact-dev-124511-unauthRole",
+      "StackName": "amplify-sareact-dev-124511",
+      "StackId": "arn:aws:cloudformation:us-west-2:211544418920:stack/amplify-sareact-dev-124511/46b7ff50-c829-11eb-a04e-0a41e48208f7",
+      "AmplifyAppId": "d36f8cafq27e48"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d36f8cafq27e48",
+          "type": "cicd"
+        }
+      },
+      "auth": {
+        "sareact11fdcd78": {}
+      }
+    }
+  }
+}
