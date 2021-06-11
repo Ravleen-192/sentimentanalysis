@@ -15,7 +15,6 @@ import Amplify from 'aws-amplify'
 import config from './aws-exports';
 import Globals from './Handlers/Globals';
 import AlertComponent from './Handlers/AlertComponent';
-import userImg from './logo1.png';
 Amplify.configure(config);
 
 
