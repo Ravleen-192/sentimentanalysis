@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-import { Col} from 'reactstrap';
+import { Col, Container} from 'reactstrap';
 import { Auth } from "aws-amplify";
 import { showError } from '../App';
 
@@ -38,25 +38,23 @@ class Verify extends Component {
         const { code} = this.props.inputs;
         return (
             <section>
-            <div className="personalbg">
-                <div className="personalfrm">
-                    <Col md={12} lg={12} xl={12} sm={12}>
-                    <Col md={6} lg={6} xl={6} sm={12}>
-                        <div className="txt-reg">
-                        <h2>Email is not verifed.</h2>
+                <div className="personalbg">
+                        <div className="centerdiv">
+                            <div>
+                                <div ><h2>Email is not verifed.</h2></div>
+                               <fieldset>
+                                    <div className="new-line"> 
+                                        <input onChange={(event)=>this.props.handleFormInput(event)} name="code" value={code} className="from-control input mb_25" autoComplete="off" type="text" placeholder="Verification Code"></input>
+                                    </div>
+                                </fieldset>
+                                
+                                <div >
+                                <button onClick={this.handleVerification} className="frmbtn signup">Submit</button>
+                                </div>
+                            </div>
                         </div>
-                    </Col>
-                    <Col md={6} lg={6} xl={6} sm={12}>
-                        <div className="input-reg">
-                            <input onChange={(event)=>this.props.handleFormInput(event)} name="code" value={code} className="from-control input mb_25" autoComplete="off" type="text" placeholder="Verification Code"></input>
-                            <Col md={12} lg={12} xl={12} sm={12}>
-                                <button style={{float:'right'}}onClick={this.handleVerification} className="frmbtn signup">Submit</button>
-                            </Col>
-                        </div>
-                    </Col>
-                    </Col>
-                </div>
-            </div>
+                    </div>
+           
         </section>
         );
     }

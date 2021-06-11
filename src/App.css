@@ -87,7 +87,7 @@ p.sub_text {
   margin-bottom: 0px;
 }
 .navbrand{
-  width: 200px;
+  width: 150px;
   float: left;
   margin-left: 10px;
 }
@@ -356,12 +356,7 @@ text-decoration :none;
     background-Repeat: 'no-repeat'!important;
     opacity: 1;
   }
-  .centerdiv {
-    padding: 200px 0 !important;
-    text-align: center;
-    color: #FFFFFF;
-    letter-spacing: 5px !important;
-  }
+ 
   .txt{
     text-align: inherit !important;
     top: inherit !important;
@@ -374,9 +369,7 @@ text-decoration :none;
   }
   .txt-reg{
     top: 30px !important;
-    left: inherit !important;
-    width: inherit !important;
-    height: inherit !important;
+    
     font-size: 12px !important;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
@@ -539,7 +532,7 @@ text-decoration :none;
   float: left;
 }
 .centerdiv {
-  padding: 315px 0;
+  padding: 200px 0;
   text-align: center;
   color: #FFFFFF;
   letter-spacing: 8px;
@@ -1332,4 +1325,8 @@ li>.dropdown-menu {
   height: 10rem;
   border: outset;
   width: 100%;
+}
+.new-line {
+  white-space: pre-line;
+  margin-top: 20px;
 }
