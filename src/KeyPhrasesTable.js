@@ -1,32 +1,37 @@
-import React, {useState} from 'react';
-
-const KeyPhrasesTable = ({result}) => {
+import React, { useState } from 'react';
+import Table from 'react-bootstrap/Table'
+const KeyPhrasesTable = ({ result }) => {
 
     const res = result.KeyPhrases ? result.KeyPhrases : [];
-    return(
-        <table>
-            <tr>
-            <th>
-                Text
-            </th>
-            <th>
-                Probability
-            </th>
-            </tr>
-            {res.map((ele) => (
+    return (
+        <div>
+        <Table striped bordered hover responsive="sm">
+                <thead>
+                    <tr>
+                        <th>
+                            Text
+                        </th>
+                        <th>
+                            Probability
+                        </th>
+                    </tr>
+                </thead>
                 
-      <tr className="table-row">
-          <td>
-              {ele.Text}
-          </td>
-          <td>
-              {(ele.Score * 100).toFixed(2) + "%"}
-          </td>
-
-      </tr>))
-      }
-        </table>
+                <tbody>
+                {res.map((ele) => (
+                    <tr>
+                        <td>
+                            {ele.Text}
+                        </td>
+                        <td>
+                            {(ele.Score * 100).toFixed(2) + "%"}
+                        </td>
+                    </tr>))}
+                </tbody>
+            </Table>
+            </div>
     )
+        
 }
 
 

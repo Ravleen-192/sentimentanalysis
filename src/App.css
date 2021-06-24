@@ -799,6 +799,18 @@ text-decoration :none;
   border: inherit;
   font-size: 18px;
 }
+.frmbtn2{
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  background: hsla(189, 100%, 38%, 1) 0% 0% no-repeat padding-box !important;
+  border-radius: 26px !important;
+  opacity: 1;
+  color: rgb(108, 240, 229);
+  text-align: center;
+  border: inherit;
+  font-size: 14px;
+}
 .frmbtn:hover{
   background: hsla(189, 73%, 62%, 1) 0% 0% no-repeat padding-box !important;
 }
@@ -1325,6 +1337,7 @@ li>.dropdown-menu {
   height: 10rem;
   border: outset;
   width: 100%;
+  overflow: auto;
 }
 .new-line {
   white-space: pre-line;

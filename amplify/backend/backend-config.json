@@ -13,5 +13,18 @@
       "dependsOn": [],
       "customAuth": false
     }
+  },
+  "function": {
+    "S3Trigger57f21fba": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true
+    }
+  },
+  "storage": {
+    "sareacts3storage": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }

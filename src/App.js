@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
@@ -14,6 +15,7 @@ import { Auth } from "aws-amplify";
 import Amplify from 'aws-amplify'
 import config from './aws-exports';
 import Globals from './Handlers/Globals';
+
 import AlertComponent from './Handlers/AlertComponent';
 Amplify.configure(config);
 
@@ -86,15 +88,29 @@ class App extends Component {
             });
         }
     };
+   
     AuthComponent = () => {
         switch (this.state.status) {
             case "Home":
+                let { user} = this.state;
+                if(!user)
                 return (<Home
                     switchComponent={this.switchComponent}
                     inputs={this.state}
                     handleFormInput={this.handleFormInput}
                     setOnLoad={this.setOnLoad}
                     clearInputs={this.clearInputs}
+                />
+                );
+                else
+                return(
+                    <MainGrid
+                    switchComponent={this.switchComponent}
+                    inputs={this.state}
+                    handleFormInput={this.handleFormInput}
+                    setOnLoad={this.setOnLoad}
+                    clearInputs={this.clearInputs}
+                    source={this.state.status}
                 />
                 );
             case "SignUp":
