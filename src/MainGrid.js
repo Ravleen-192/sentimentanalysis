@@ -158,7 +158,7 @@ const MainGrid = () => {
 
 
   return (
-    <div style={divStyle} className="homeimg">
+    <div className="homeimg">
       <Grid container spacing={10} className="grid">
 
         <Grid item xs={6} className="input-box">
@@ -188,8 +188,12 @@ const MainGrid = () => {
           <div
             style={{ display: isToggle ? 'block' : 'none' }}
           >
+           <div className="new-line">
+              <label class="custom-file-upload">
+                <input type="file" onChange={handleFileChange} />
+              </label>
+            </div>
             <div>
-                <input className="new-line" type="file" onChange={handleFileChange}/>
                 <button className="frmbtn2" onClick={saveFile}  type="submit">Upload</button>
               {!!response && <div>{response}</div>}
             </div>

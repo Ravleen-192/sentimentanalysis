@@ -2,15 +2,15 @@ import React,{Component} from 'react';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import homeimg from "../images/home.png";
-const divStyle = {
+/*const divStyle = {
   backgroundposition: "50% 0",
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
   width: '100%',
   height: '100%',
   opacity:1,
-  backgroundImage: `url(${homeimg})`,
-};
+  //backgroundImage: `url(${homeimg})`,
+};*/
 class Home extends Component {
   constructor() {
     super();
@@ -23,21 +23,26 @@ class Home extends Component {
     window.scrollTo(0,0);
     
   }
- 
+  handleClick = event => {
+    this.props.switchComponent("SignIn");
+    this.props.setOnLoad(true);
+    this.props.clearInputs();
+  }
   render() {
     
     return (
       <section>
       <div className="bg ">
-        <div style={divStyle} className="homeimg">
-          <div className="homebg">
+        
+          
             <div className="centerdiv">
-              <h1 align="center">Lets Take A Step Towards the Next Generation!!</h1>
-              <h2 align="center">Lets Take A Step Towards the Next Generation!!</h2>
-              <h3 align="center">Lets Take A Step Towards the Next Generation!!</h3>
+              <h2 align="center">Welcome to Triadh’s StoLav Adaptive Intelligence Platform.</h2>
+              <h3 align="center" > Analyze and get intelligence from your unstructured data (text, scanned documents, audio, video) .</h3>
+              <h6 align="center">Explore our Computer Vision Catalog of libraries, utilities and models optimized for Cloud and edge,IOT and embedded devices.</h6>
+              <button align="center" className="frmbtn" onClick={this.handleClick}>Sign in </button>
             </div>
-          </div>
-        </div>
+          
+        
       </div>
       </section>
     );

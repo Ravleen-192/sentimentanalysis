@@ -40,8 +40,8 @@ class App extends Component {
             ],
             links: [
                 { href: '#Home', text: 'Home', menuId: 1, source: "Home", isActive: true },
-                { href: "#Login", text: "Sign In", menuId: 2, source: "SignIn", isActive: false },
-                { href: '#Reg', text: 'Sign Up Free', menuId: 3, className: "register", source: "SignUp", isActive: false },
+                { href: "#Login", text: "Sign In", menuId: 2, source: "SignIn", isActive: false }
+               // { href: '#Reg', text: 'Sign Up Free', menuId: 3, className: "register", source: "SignUp", isActive: false },
             ]
         };
         mContext = this;

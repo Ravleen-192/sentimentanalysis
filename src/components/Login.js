@@ -67,7 +67,7 @@ class Login extends Component {
                     <div className="personalbg">
                         <div className="centerdiv">
                             <div>
-                                <div><h3>Great to have you back here!</h3></div>
+                                <div><h3>Sign in to Stolav Adaptive Intelligence Platform.</h3></div>
                                 <fieldset>
                                     <div className="new-line"><input onChange={(event) => this.props.handleFormInput(event)} name="username" value={username} className="input mb_25" autoComplete="off" type="email" placeholder="Email"></input></div>
                                 </fieldset>
@@ -76,6 +76,9 @@ class Login extends Component {
                                 </fieldset>
                                 <div >
                                     <button onClick={this.handleSignIn} className="frmbtn">Sign In</button>
+                                </div>
+                                <div className="new-line">
+                                   <p> Not enrolled/forgot password?<a href="https://www.triadh.digital" target="_blank" rel="noopener noreferrer">Contact us</a> </p>
                                 </div>
                             </div>
                         </div>

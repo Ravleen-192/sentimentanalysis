@@ -352,8 +352,8 @@ text-decoration :none;
     top: 85px;
     width: 100%;
     height: 710px;
-    background-image: url('./images/home.png') !important;
-    background-Repeat: 'no-repeat'!important;
+    /*background-image: url('./images/home.png') !important;
+    background-Repeat: 'no-repeat'!important;*/
     opacity: 1;
   }
  
@@ -463,7 +463,7 @@ text-decoration :none;
 }
 
 .homebg{
-  background-color: hsla(0, 0%, 0%, 0.4);
+ /* background-color: hsla(0, 0%, 0%, 0.4);*/
   height: 710px;
 }
 .navbar-nav .nav-item{
@@ -534,10 +534,10 @@ text-decoration :none;
 .centerdiv {
   padding: 200px 0;
   text-align: center;
-  color: #FFFFFF;
-  letter-spacing: 8px;
-  font-weight: bolder;
-  font-size: larger;
+  color: #00A5C3;
+  letter-spacing: 2px;
+  font-weight:lighter;
+  font-size:small;
   z-index: 99999;
 }
 .center {
@@ -758,7 +758,7 @@ text-decoration :none;
   left: 0px;
   width: 100%;
   height: 599px;
-  background: transparent url('./images/personalbg.png') 0% 0% no-repeat padding-box;
+  /*background: transparent url('./images/personalbg.png') 0% 0% no-repeat padding-box;*/
   background-repeat: no-repeat;
   background-position: 50% 0;
   -ms-background-size: cover;
@@ -1342,4 +1342,18 @@ li>.dropdown-menu {
 .new-line {
   white-space: pre-line;
   margin-top: 20px;
+  border:1px;
+}
+input[type="file"] {
+  display: block;
+}
+.custom-file-upload {
+  border: 1px solid rgb(17, 149, 158);
+  background-color: rgb(243, 241, 241);
+  display: inline-block;
+  letter-spacing: 2px;
+  font-weight:lighter;
+  font-size:small;
+  padding: 12px 30px;
+  cursor: pointer;
 }
