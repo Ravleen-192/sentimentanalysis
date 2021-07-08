@@ -1354,6 +1354,6 @@ input[type="file"] {
   letter-spacing: 2px;
   font-weight:lighter;
   font-size:small;
-  padding: 12px 30px;
+  overflow: auto;
   cursor: pointer;
 }
