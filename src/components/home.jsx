@@ -36,7 +36,7 @@ class Home extends Component {
         
           
             <div className="centerdiv">
-              <h2 align="center">Welcome to Triadh’s StoLav Adaptive Intelligence Platform.</h2>
+              <h2 align="center">Welcome to Triadh’s Helios Adaptive Intelligence Platform.</h2>
               <h3 align="center" > Analyze and get intelligence from your unstructured data (text, scanned documents, audio, video) .</h3>
               <h6 align="center">Explore our Computer Vision Catalog of libraries, utilities and models optimized for Cloud and edge,IOT and embedded devices.</h6>
               <button align="center" className="frmbtn" onClick={this.handleClick}>Sign in </button>
