@@ -67,7 +67,7 @@ class Login extends Component {
                     <div className="personalbg">
                         <div className="centerdiv">
                             <div>
-                                <div><h3>Sign in to Stolav Adaptive Intelligence Platform.</h3></div>
+                                <div><h3>Sign in to Helios Adaptive Intelligence Platform.</h3></div>
                                 <fieldset>
                                     <div className="new-line"><input onChange={(event) => this.props.handleFormInput(event)} name="username" value={username} className="input mb_25" autoComplete="off" type="email" placeholder="Email"></input></div>
                                 </fieldset>
